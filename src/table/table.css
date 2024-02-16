@@ -1,89 +1,113 @@
 .table-scroll {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    overflow: auto; /* Changed to 'auto' for horizontal scrolling */
-    border: 1px solid #000;
-  }
-  
-  .consultaion_ts__td.empty-cell {
-    background: #ffa1a1;
-  }
-  
-  .fixed-side {
-    background: #ffe699 !important;
-    font-size: 12px;
-    text-align: center;
-    position: sticky;
-    left: 0;
-    z-index: 2; /* Increased z-index to ensure it's above other elements */
-  }
-  
-  th.consultaion_ts__tab {
-    background: #ffe699 !important;
-    font-size: 12px;
-  }
-  
-  td.consultaion_ts__td {
-    font-size: 12px;
-  }
-  
-  .table-wrap {
-    width: 100%; /* Adjusted width to accommodate scrollbar */
-    overflow: auto;
-  }
-  
-  .table-scroll table {
-    width: 100%;
-    margin: auto;
-    border-collapse: separate;
-    border-spacing: 0;
-  }
-  
-  .table-scroll th,
-  .table-scroll td {
-    padding: 5px 10px;
-    border: 1px solid #000;
-    background: #fff;
-    white-space: nowrap;
-    vertical-align: top;
-  }
-  
-  .table-scroll thead,
-  .table-scroll tfoot {
-    background: #f9f9f9;
-  }
-  
-  .clone {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-  }
-  
-  .clone th,
-  .clone td {
-    visibility: hidden;
-  }
-  
-  .clone td,
-  .clone th {
-    border-color: transparent;
-  }
-  
-  .clone tbody th {
-    visibility: visible;
-    color: red;
-  }
-  
-  .clone .fixed-side {
-    border: 1px solid #000;
-    background: #eee;
-    visibility: visible;
-    z-index: 1; /* Adjusted z-index to ensure it's below the main table */
-  }
-  
-  .clone thead,
-  .clone tfoot {
-    background: transparent;
-  }
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: auto; /* Changed to 'auto' for horizontal scrolling */
+  border: 1px solid #000;
+}
+
+span.excel__button {
+  background: green;
+  color: white;
+  font-weight: bold;
+  width: 95px;
+  display: flex;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 6px;
+  margin: 4px;
+  justify-content: center;
+  align-items: center;
+}
+span.excel__button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+span.excel__button:active {
+  cursor: pointer;
+  transform: scale(1.02);
+  background: rgb(1, 99, 1);
+}
+
+.consultaion_ts__td.empty-cell {
+  background: #ffa1a1;
+}
+
+.fixed-side {
+  background: #ffe699 !important;
+  font-size: 12px;
+  text-align: center;
+  position: sticky;
+  left: 0;
+  z-index: 2; /* Increased z-index to ensure it's above other elements */
+}
+
+th.consultaion_ts__tab {
+  background: #ffe699 !important;
+  font-size: 12px;
+}
+
+td.consultaion_ts__td {
+  font-size: 12px;
+}
+
+.table-wrap {
+  width: 100%; /* Adjusted width to accommodate scrollbar */
+  overflow: auto;
+}
+
+.table-scroll table {
+  width: 100%;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-scroll th,
+.table-scroll td {
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background: #fff;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.table-scroll thead,
+.table-scroll tfoot {
+  background: #f9f9f9;
+}
+
+.clone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.clone th,
+.clone td {
+  visibility: hidden;
+}
+
+.clone td,
+.clone th {
+  border-color: transparent;
+}
+
+.clone tbody th {
+  visibility: visible;
+  color: red;
+}
+
+.clone .fixed-side {
+  border: 1px solid #000;
+  background: #eee;
+  visibility: visible;
+  z-index: 1; /* Adjusted z-index to ensure it's below the main table */
+}
+
+.clone thead,
+.clone tfoot {
+  background: transparent;
+}
